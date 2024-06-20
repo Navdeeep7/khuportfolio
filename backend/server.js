@@ -6,10 +6,16 @@ const bodyParser = require('body-parser');
 
 const app = express();
 
-app.use(cors());
+app.use(cors({
+  origin:[""],
+  methods:["POST","GET"],
+  credentials:true
+}));
 app.use(express.json());
 app.use("/", router);
-
+app.get("/",(req,res)=>{
+  res.json({msg:"Welcome to my API"});
+})
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
