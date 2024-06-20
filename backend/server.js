@@ -5,13 +5,11 @@ const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 
 const app = express();
-app.get("/",(req,res)=>{
-  res.json("hello");
-})
+
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
-app.listen(5000, () => console.log("Server Running"));
+
 console.log(process.env.EMAIL_USER);
 console.log(process.env.EMAIL_PASS);
 
@@ -53,3 +51,4 @@ router.post("/contact", (req, res) => {
     }
   });
 });
+app.listen(5000, () => console.log("Server Running"));
