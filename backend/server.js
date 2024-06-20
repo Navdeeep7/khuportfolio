@@ -5,6 +5,9 @@ const nodemailer = require("nodemailer");
 const bodyParser = require('body-parser');
 
 const app = express();
+app.get("/",(req,res)=>{
+  res.json("hello");
+})
 app.use(cors());
 app.use(express.json());
 app.use("/", router);
