@@ -10,7 +10,7 @@ const app = express();
 
 // CORS configuration
 app.use(cors({
-  origin: ["https://khuportfoliofrontend.vercel.app/"], 
+  origin: ["https://khuportfoliofrontend.vercel.app"], 
   methods: ["POST", "GET"],
   credentials: true
 }));
