@@ -16,9 +16,9 @@ export const Footer = () => {
           </Col>
           <Col size={12} sm={6} className="text-center text-sm-end">
             <div className="social-icon"><br></br>
-              <a href="#"><img src={navIcon1} alt="Icon" /></a>
-              <a href="#"><img src={navIcon2} alt="Icon" /></a>
-              <a href="#"><img src={navIcon3} alt="Icon" /></a>
+              <a href="https://www.linkedin.com/in/khushi-rakheja-600b64262/"><img src={navIcon1} alt="Icon" /></a>
+              <a href="https://github.com/khushi-rakheja"><img src={navIcon2} alt="Icon" /></a>
+              <a href="https://www.instagram.com/khhushiii033?igsh=ZmFpanp6ZnBvYjli"><img src={navIcon3} alt="Icon" /></a>
             </div>
             <p>Made with ❤️ by Khushi Rakheja</p>
           </Col>
